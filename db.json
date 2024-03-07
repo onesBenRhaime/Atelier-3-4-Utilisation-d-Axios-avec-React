@@ -1,0 +1,14 @@
+{
+  "events": [
+    {
+      "name": "rthrth",
+      "description": "thrthrh",
+      "price": 5633,
+      "nbTickets": 10,
+      "img": "",
+      "nbParticipants": 0,
+      "like": false,
+      "id": 1
+    }
+  ]
+}
