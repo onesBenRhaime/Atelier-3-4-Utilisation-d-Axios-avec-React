@@ -35,7 +35,7 @@ function Event(props) {
 				<Card.Text>Price : {event.price}</Card.Text>
 				<Card.Text>Number of tickets : {event.nbTickets}</Card.Text>
 				<Card.Text>Number of participants : {event.nbParticipants}</Card.Text>
-				<Button variant="primary" onClick={handleLike}>
+				<Button variant="primary" onClick={handleLike} className="mx-2">
 					{msg}
 				</Button>
 				<Button
@@ -45,8 +45,12 @@ function Event(props) {
 				>
 					Book an event
 				</Button>
-				<Button onClick={() => handleDeleteEvent(event)}>Supprimer</Button>
-				<Link to={`/edit/${event.id}`}>Modifier</Link>
+				<Button onClick={() => handleDeleteEvent(event)} className="mx-2">
+					Delete
+				</Button>
+				<Link to={`/edit/${event.id}`} className=" btn btn-primary mx-2">
+					Edit
+				</Link>
 			</Card.Body>
 		</Card>
 	);
